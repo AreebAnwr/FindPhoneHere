@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiNdPhOnE 📱</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, rgb(251, 252, 253), #dae6f4);
+            color: #080404;
+        }
+
+        header {
+          background-color: hsl(268, 31%, 90%);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #74e760, #00cc85);
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: linear-gradient(90deg, #fcf405, #3e1c68);
+            color: #fff;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+       
+
+        .mobile-card {
+            background: linear-gradient(90deg, #4c9193, #00cc69);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mobile-card video {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .mobile-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .specs {
+            text-align: left;
+            color: #fff;
+        }
+
+        .image-gallery {
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .gallery-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+       
+
+      
+
+        form {
+            background-color: #618492;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        } 
+
+        label {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+
+        input,textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+}
+
+        button {
+            background: linear-gradient(90deg, #c853d5, #c91f1f);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #00cca7, #b0be0c);
+        }
+        .rating {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .search-input {
+            width: 300px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-button {
+            background: linear-gradient(90deg, #0fa420, #00becc);
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .search-button:hover {
+            background: linear-gradient(90deg, #ec15a8, #d30913);
+        }
+        .company-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+
+        .mobile-card {
+        /* Your existing .mobile-card styles */
+        /* Ensure width and margin are appropriate for the layout you want */
+        width: 300px;
+        margin: 15px;
+        }
+        .download {
+	background: #dad8e5;
+	background: linear-gradient(to left, #49c28a, #cd9ffa);
+	padding:100px 0px;
+	position:relative;
+}
+.download::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/pattern.png);
+}
+.download ul {
+	list-style: none;
+}
+.download ul li {
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+}
+.download ul li a {
+	display: block;
+}
+.download ul li a img {
+	width: 150px;
+	border-radius: 7px;
+}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, rgb(251, 252, 253), #dae6f4);
+            color: #080404;
+        }
+
+        header {
+          background-color: hsl(268, 31%, 90%);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(90deg, #74e760, #00cc85);
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: linear-gradient(90deg, #fcf405, #3e1c68);
+            color: #fff;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+       
+
+        .mobile-card {
+            background: linear-gradient(90deg, #4c9193, #00cc69);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin: 15px;
+            padding: 20px;
+            width: calc(33.33% - 30px); /* Adjusted for margin */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease; /* Added transition */
+        }
+
+        .mobile-card:hover {
+            transform: translateY(-5px); /* Added hover effect */
+        }
+        
+        .mobile-card video,
+        .mobile-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .specs {
+            text-align: left;
+            color: #fff;
+        }
+
+        .image-gallery {
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .gallery-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        form {
+            background-color: #618492;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        } 
+
+        label {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: linear-gradient(90deg, #c853d5, #c91f1f);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #00cca7, #b0be0c);
+        }
+
+        .rating {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .search-input {
+            width: 300px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-button {
+            background: linear-gradient(90deg, #0fa420, #00becc);
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .search-button:hover {
+            background: linear-gradient(90deg, #ec15a8, #d30913);
+        }
+
+        .company-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .mobile-card {
+            width: 300px;
+            margin: 15px;
+        }
+
+        .download {
+            background: #dad8e5;
+            background: linear-gradient(to left, #49c28a, #cd9ffa);
+            padding: 100px 0px;
+            position: relative;
+        }
+
+        .download::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url(images/pattern.png);
+        }
+
+        .download ul {
+            list-style: none;
+        }
+
+        .download ul li {
+            display: inline-block;
+            margin: 0px 10px 10px 0px;
+        }
+
+        .download ul li a {
+            display: block;
+        }
+
+        .download ul li a img {
+            width: 150px;
+            border-radius: 7px;
+        }
+
+        /* Media Queries */
+        @media screen and (min-width: 769px) {
+            .mobile-card:hover {
+                transform: translateY(-10px); /* Increase hover effect for larger screens */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .mobile-card {
+                width: calc(50% - 30px); /* Adjusted for margin */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .mobile-card {
+                width: calc(100% - 30px); /* Adjusted for margin */
+            }
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+
+<header>
+    
+    <h1>FiNdPhOnE 📱</h1>
+    <div>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+        <button class="search-button" onclick="searchPhones()">Search</button>
+        <script>
+            function searchPhones() {
+                // Get input value and convert it to lowercase for case-insensitive search
+                var query = document.getElementById('searchInput').value.toLowerCase();
+                
+                // Get all mobile cards
+                var mobileCards = document.getElementsByClassName('mobile-card');
+                
+                // Loop through each card and check if it contains the search query
+                for (var i = 0; i < mobileCards.length; i++) {
+                    var card = mobileCards[i];
+                    var cardTitle = card.querySelector('.specs h2').innerText.toLowerCase();
+                    
+                    // Show or hide the card based on the search result
+                    if (cardTitle.includes(query)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            }
+        </script>
+        
+  </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#latest">Latest Phones</a>
+        <a href="#realme">Realme Phones</a>
+        <a href="#redmi">Redmi Phones</a>
+        <a href="#redmagic">RedMagic Phones</a>
+        
+        <!-- Add more categories as needed -->
+    </nav>
+   
+</header>
+
+<section>
+    
+<h2>「 ✦ Latest Models ✦ 」</h2>  
+
+<div class="company-container">
+      <!-- Latest Phones -->
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://global.redmagic.gg/cdn/shop/files/REDMAGIC-9-Pro-Media-Sleet-1.png" alt="Latest 1" width="300" height="400">
+                   
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:REDMAGIC 9 Pro-The Chill That Never Quits</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/9jOM6_HK2Ro" title="RedMagic 9 Pro Official First Look" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>RedMagic 9 Pro</h2>
+            <p>Processor: Snapdragon 8 Gen 3 (4 nm)</p>
+            <p>RAM: 8GB,12GB,16GB</p>
+            <p>Storage: 256GB,512GB</p>
+            <p>Camera: 50MP + 50MP + 2MP , 16MP</p>
+            <p>Price: $649.00</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+        
+        
+    </div>
+
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://image01.realme.net/general/20240205/17071274789245474b0193af9452ab9fcbf9320c815e5.png.webp" alt="Realme 2" width="300" height="400">
+                    
+                    <div class="rating">Rating : ⭐⭐⭐⭐</div>
+                    <h3>Trailer:Precision Meet Sophistication  - realme 12 Pro</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/_f9LWmVX4rY" title="Watch Precision Meet Sophistication  | realme 12 Pro Series 5G" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Realme 12 Pro Plus</h2>
+            <p>Processor: Snapdragon 7s Gen 2 (4 nm)</p>
+            <p>RAM: 8/12GB</p>
+            <p>Storage: 128/256/512GB</p>
+            <p>Camera: 50MP + 64MP + 8MP,32MP</p>
+            <p>Price: $400</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://www.whatmobile.com.pk/admin/images/Xiaomi/14%20Ultra/Xiaomi-14-Ultra-Image-1.jpg" alt="Redmi 3" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:Meet Xiaomi 14 Ultra - Lens to legend</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/WxJZOe-IKhQ" title="Meet Xiaomi 14 Ultra | Lens to legend" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Xiaomi Redmi 14 ULTRA</h2>
+            <p>Processor: Snapdragon 8 Gen 3 (4 nm)  </p>
+            <p>RAM: 12/16GB </p>
+            <p>Storage:256/512GB/1TB</p>
+            <p>Camera:  50 MP + 50 MP + 50MP</p>
+            <p>Price: $983.95</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+</div>    
+    <!-- Add more Latest Phones as needed -->
+<h2>「 ✦ Realme Phones ✦ 」:</h2>
+<div class="company-container">
+    <!-- Realme Phones -->
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://image01.realme.net/general/20240205/17071274789245474b0193af9452ab9fcbf9320c815e5.png.webp" alt="Realme 2" width="300" height="400">
+                   
+                    <div class="rating">Rating : ⭐⭐⭐⭐</div>
+                    <h3>Trailer:Realme 12 Pro</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/_f9LWmVX4rY" title="Watch Precision Meet Sophistication  | realme 12 Pro Series 5G" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Realme 12 Pro Plus</h2>
+            <p>Processor: Snapdragon 7s Gen 2 (4 nm)</p>
+            <p>RAM: 8/12GB</p>
+            <p>Storage: 128/256/512GB</p>
+            <p>Camera: 50MP + 64MP + 8MP,32MP</p>
+            <p>Price: $400</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://image01.realme.net/general/20231110/16995892713775f5920506b1b48deb1970b5bed39dbe4.jpg.webp" alt="Realme 2" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐</div>
+                    <h3>Trailer:Realme 11 Pro </h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/Do3Bl-PAots" title="realme 11 Pro Series 5G | Premium Vegan Leather Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Realme 11 Pro Plus</h2>
+            <p>Processor: Mediatek Dimensity 7050</p>
+            <p>RAM: 8 GB/ 12 GB</p>
+            <p>Storage: 256 GB/ 512 GB/ 1 TBB</p>
+            <p>Camera: 200 MP + 8 MP + 2 MP,32 MP</p>
+            <p>Price: $399</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://image01.realme.net/general/20240105/1704419834105be51d94716d4469084d9ba9b1a904eb6.png.webp" alt="Realme 2" width="300" height="400">
+                    
+                    <div class="rating">Rating : ⭐⭐⭐⭐</div>
+                    <h3>Trailer:Realme C67 5G</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/fKmRv_6V6DE" title="realme C67 5G | 33W SUPERVOOC Charge &amp; 5000mAh Massive Battery" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Realme C67</h2>
+            <p>Processor:  Snapdragon 685 (6 nm)  </p>
+            <p>RAM: 8GB</p>
+            <p>Storage: 128GB</p>
+            <p>Camera: 108MP + 2MP, 8MP</p>
+            <p>Price: $138</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+</div>   
+ <!-- Add more Realme Phones as needed -->
+<h2>「 ✦ Redmi Phones ✦ 」</h2>
+    <!-- Redmi Phones -->
+<div class="company-container">
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://www.whatmobile.com.pk/admin/images/Xiaomi/14%20Ultra/Xiaomi-14-Ultra-Image-1.jpg" alt="Redmi 3" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:Meet Xiaomi 14 Ultra - Lens to legend</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/WxJZOe-IKhQ" title="Meet Xiaomi 14 Ultra | Lens to legend" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Xiaomi Redmi 14 ULTRA</h2>
+            <p>Processor: Snapdragon 8 Gen 3 (4 nm)  </p>
+            <p>RAM: 12/16GB </p>
+            <p>Storage:256/512GB/1TB</p>
+            <p>Camera:  50 MP + 50 MP + 50MP</p>
+            <p>Price: $983.95</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://www.whatmobile.com.pk/admin/images/Xiaomi/14/Xiaomi-14-Image-2.jpg" alt="Redmi 3" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:Meet Xiaomi 14 - Lens to legend</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/kyGDngkTCXQ" title="Meet Xiaomi 14 | Lens to legend" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Xiaomi Redmi 14 </h2>
+            <p>Processor: Snapdragon 8 Gen 3 (4 nm)  </p>
+            <p>RAM: 12GB</p>
+            <p>Storage: 512GB</p>
+            <p>Camera:  50 MP + 50 MP + 50MP</p>
+            <p>Price: $919</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13-colors-1.jpg" alt="Redmi 3" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:Xiaomi 13T Series - Masterpiece in sight</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/r1szpI_omcQ" title="Meet the Xiaomi 13T Series | Masterpiece in sight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>Xiaomi Redmi  13</h2>
+            <p>Processor: Snapdragon 8 Gen 2 (4 nm)  </p>
+            <p>RAM:  8/12GB</p>
+            <p>Storage: 128/256/512GB</p>
+            <p>Camera: 50MP + 10MP + 12MP</p>
+            <p>Price: $889.50</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+
+</div>   
+<!-- Add more Redmi Phones as needed -->
+     
+    <!-- RedMagic Phones -->
+<h2>「 ✦ RedMagic Phones ✦ 」</h2>    
+<div class="company-container">
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://global.redmagic.gg/cdn/shop/files/REDMAGIC-9-Pro-Media-Sleet-1.png" alt="Latest 1" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:REDMAGIC 9 Pro-The Chill That Never Quits</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/9jOM6_HK2Ro" title="RedMagic 9 Pro Official First Look" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>RedMagic 9 Pro</h2>
+            <p>Processor: Snapdragon 8 Gen 3 (4 nm)</p>
+            <p>RAM: 8GB,12GB,16GB</p>
+            <p>Storage: 256GB,512GB</p>
+            <p>Camera: 50MP + 50MP + 2MP , 16MP</p>
+            <p>Price: $649.00</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://whatsmobiles.net/wp-content/uploads/2023/06/RED-MAGIC-6-PRO-PRICE-IN-PAKISTAN-1-400x500.jpg" alt="RedMagic Model" width="300" height="400">
+                    
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:Nubia Red Magic 6 Pro Transparent Edition Official</h3>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/urrpFYXMyUM" title="Nubia Red Magic 6 Pro Transparent Edition Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>RedMagic 6 Pro</h2>
+            <p>Processor: Snapdragon 888 (5 nm)</p>
+            <p>RAM: 12GB/18GB</p>
+            <p>Storage: 128GB/256GB/512GB</p>
+            <p>Camera: 64MP + 8MP + 2MP, 8MP</p>
+            <p>Price: $765.55</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+    <div class="mobile-card">
+        <div class="image-gallery">
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://global.redmagic.gg/cdn/shop/files/2x_62cef52e-c8f9-4283-aba1-2670e038886e.jpg?v=1689662817" alt="RedMagic Model" width="300" height="400">
+                    <div class="rating">Rating : ⭐⭐⭐⭐⭐</div>
+                    <h3>Trailer:REDMAGIC 8 Pro- Up Your Game</h3>
+                    
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/n0Fdvk1COWY" title="REDMAGIC 8 Pro: Up Your Game" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+        <div class="specs">
+            <h2>REDMAGIC 8 Pro</h2>
+            <p>Processor: Snapdragon 8 Gen 2 (4 nm)</p>
+            <p>RAM: 8GB,12GB,16GB</p>
+            <p>Storage: 128/256/512GB</p>
+            <p>Camera: 50MP + 8MP + 2MP, 16MP</p>
+            <p>Price: $450</p>
+        </div>
+        <button class="buy-button" onclick="buyNow(this)">Buy Now</button>
+    </div>
+    
+</div>
+
+</section>
+
+<center><h1>«────── « ⋅ʚ♡ɞ⋅ » ──────»</h1></center>
+<center><h2>Leave Review</h2></center>
+<section>
+        <center>
+            <form id="reviewForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" placeholder="Type your review here..."></textarea>
+        
+                <button type="button" onclick="submitReview()">Submit Review</button>
+            </form>
+        </center>
+
+   
+</section>
+<section class="download section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="sectioner-header text-center white">
+            <center><h2>Download Our App</h2></center>
+            <span class="line"></span>
+            <p class="white">Download the APP to get latest updates and many more features.</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="section-content text-center">
+            <br>
+            <ul>
+              <center>
+                <li><a href="#"><img src="appstore.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+              <li><a href="#"><img src="playstore.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
+              </center>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<center><h1>«────── « ⋅ʚ♡ɞ⋅ » ──────»</h1></center>
+<br>
+<a href="areebanwar12345m@gmail.com">Email</a>
+<br>
+<a href="#contact">Contact</a>
+<!-- Add this script tag in the head or before closing body tag -->
+<script>
+    function buyNow(button) {
+        // Get the parent mobile card element
+        var mobileCard = button.closest('.mobile-card');
+        
+        // Get the phone model from the card
+        var phoneModel = mobileCard.querySelector('.specs h2').innerText;
+        
+        // Display an alert with the phone model and a message
+    
+        alert('Item added to cart:\n' + phoneModel);
+        
+        // Additional actions can be added here, e.g., updating a shopping cart
+    }
+</script>
+<script>
+    function submitReview() {
+    // Get form element
+    var form = document.getElementById('reviewForm');
+
+    // Perform actions to submit the review (e.g., send data to server)
+
+    // After submitting, reset the form fields
+    form.reset();
+
+    // Display a message or perform any other actions as needed
+    alert('Review submitted successfully! Thank you for your feedback.');
+    }
+
+</script>
+
+
+</body>
+</html>
